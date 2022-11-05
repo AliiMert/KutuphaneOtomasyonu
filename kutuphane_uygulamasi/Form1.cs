@@ -22,21 +22,21 @@ namespace kutuphane_uygulamasi
             Nick_Hatirla();
         }
 
-        private void Txt_Box_Parola_KeyPress(object sender, KeyPressEventArgs e)
-        {
-           Txt_Box_Parola.UseSystemPasswordChar = true; //Yazılan şifreyi gizliyorum.
-        }
+        //private void Txt_Box_Parola_KeyPress(object sender, KeyPressEventArgs e)
+        //{
+        //    Txt_Box_Parola.PasswordChar = '\0'; //Yazılan şifreyi gizliyorum.
+        //}
 
         private void Chc_Box_Parola_CheckedChanged(object sender, EventArgs e)
         {
-            if (Chc_Box_Parola.CheckState==CheckState.Unchecked) //if sorgusu yapıp check boxın durumunu kontrol ediyorum.if koşulu sağlıyorsa Parolamı göster yazıyor.
+            if (Chc_Box_Parola.CheckState==CheckState.Unchecked) //if sorgusu yapıp check boxın durumunu kontrol ediyorum.if koşulu sağlıyorsa Parolam gösteriliyor
             {
-                Txt_Box_Parola.UseSystemPasswordChar = true;
+                Txt_Box_Parola.PasswordChar = '*';
                 Chc_Box_Parola.Text = "Parolamı Göster";
             }
-            else if (Chc_Box_Parola.CheckState==CheckState.Checked)
+            else
             {
-                Txt_Box_Parola.UseSystemPasswordChar = false;
+                Txt_Box_Parola.PasswordChar = '\0';
                 
             }
         }
@@ -59,35 +59,108 @@ namespace kutuphane_uygulamasi
 
         private void Btn_Giris_Yap_Click(object sender, EventArgs e)
         {
-            string kullanicinick = Txt_Box_Kullanici_ismi.Text;
-            string kullanicisifre = Txt_Box_Parola.Text;
-            kullanicilarbaglanti.Open();
-            //girilen kullanıcı adındaki şifreyi alır
-            SqlCommand girisyapkomut = new SqlCommand("Select kullanici_sifre From Kutuphane_Kullanicilar Where kullanici_nick = '" + kullanicinick + "'"
-                    , kullanicilarbaglanti);
-            girisyapkomut.ExecuteNonQuery();
-
-           SqlDataReader sifreal = girisyapkomut.ExecuteReader();
-            sifreal.Read();
-            string alinansifre = sifreal["kullanici_sifre"].ToString();
-
-             if(kullanicisifre != alinansifre)
+            //Personel girişi check boxını kontrol ediyor
+            if (chcbx_Personel.Checked)     //check box tikli ise kullanıcı adı veri tabanında personel olarak kayıtlı mı diye kontrol ediyor
             {
-                string message = "Lütfen kullanıcı adı veya şifrenizi kontrol edin!";
-                string title = "UYARI";
-                MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Warning);  // yanlış şifre girilirse
-            }
-            else
-            {
-                string message = "Giriş Başarılı!";
-                string title = "BAŞARILI";
-                MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Information);  // boş yer varsa uyarı verir
+                kullanicilarbaglanti.Open();
+                string girilennick = Txt_Box_Kullanici_ismi.Text;
+                SqlCommand personelnicksorgukomut = new SqlCommand("SELECT Count(Personel_Nick) FROM Kutuphane_Personeller WHERE Personel_Nick = '" + girilennick + "'"
+                        , kullanicilarbaglanti);
+                personelnicksorgukomut.ExecuteNonQuery();
+                int varmi = (int)personelnicksorgukomut.ExecuteScalar();
+                kullanicilarbaglanti.Close();
+               
+                if(varmi == 1)      //bu nickte personel varsa veritabanından şifresini çekiyor
+                {
+                    string personelnick = Txt_Box_Kullanici_ismi.Text;
+                    string personelsifre = Txt_Box_Parola.Text;
+                    kullanicilarbaglanti.Open();
+                    //girilen kullanıcı adındaki şifreyi alır
+                    SqlCommand personelsifrealkomut = new SqlCommand("Select Personel_Sifre From Kutuphane_Personeller Where Personel_Nick = '" + personelnick + "'"
+                            , kullanicilarbaglanti);
+                    personelsifrealkomut.ExecuteNonQuery();
+                    
+                    SqlDataReader sifreal = personelsifrealkomut.ExecuteReader();
+                    sifreal.Read();
+                    string alinansifre = sifreal["Personel_Sifre"].ToString();
+                    kullanicilarbaglanti.Close();
+                    if (personelsifre != alinansifre)   //şifre yanlışsa messagebox ile uyarı veriyor
+                    {
+                        string message = "Lütfen şifrenizi kontrol edin!";
+                        string title = "UYARI";
+                        MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Warning);  // yanlış şifre girilirse
+                    }
+                    else    //Personel nicki var ve şifre doğru ise personel sayfasına atıyor
+                    {
+                        //Personel sayfasına atar
+                        FormPersonel personelsayfasi = new FormPersonel();
+                        personelsayfasi.lbl_personel_nick.Text = Txt_Box_Kullanici_ismi.Text;
+                        personelsayfasi.Show();
 
-                FormKitapKiralama formac = new FormKitapKiralama();
-                formac.Show();
-                Son_Nick_Kaydet();
+                        // son girilen nicki hafızaya kaydediyor
+                        Son_Nick_Kaydet();
+
+                    }
+                    kullanicilarbaglanti.Close();
+
+                    
+                }
+                else    //girilen nickte veritabanında personel yoksa uyarı veriyor
+                {
+                    string message = "Bu kullanıcı adında bir personel yok, kullanıcı adınızı kontrol edin!";
+                    string title = "UYARI";
+                    MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Warning);  // personel olmayan nick
+                }
+
             }
-            kullanicilarbaglanti.Close();
+            else    //Personel check boxı tikli değilse kullanıcı giriş yapıyor demektir
+            {
+                // girilen nick ve şifreyi değişkene atıyor
+                string kullanicinick = Txt_Box_Kullanici_ismi.Text;
+                string kullanicisifre = Txt_Box_Parola.Text;
+                kullanicilarbaglanti.Open();
+                //girilen nickte veritabanında eşleşen nick var mı diye veri tabanını kontrol ediyor
+                SqlCommand kullanicinicksorgukomut = new SqlCommand("SELECT Count(kullanici_nick) FROM Kutuphane_Kullanicilar WHERE kullanici_nick = '" + kullanicinick + "'"
+                        , kullanicilarbaglanti);
+                kullanicinicksorgukomut.ExecuteNonQuery();
+                
+                int varmi = (int)kullanicinicksorgukomut.ExecuteScalar();
+                kullanicilarbaglanti.Close();
+                if (varmi == 1)     //girilen nick bir kullaniciya ait ise
+                {
+                    SqlCommand girisyapkomut = new SqlCommand("Select kullanici_sifre From Kutuphane_Kullanicilar Where kullanici_nick = '" + kullanicinick + "'"
+                        , kullanicilarbaglanti);
+                    kullanicilarbaglanti.Open();
+                    girisyapkomut.ExecuteNonQuery();
+                   
+                    //girilen kullanıcı adındaki şifreyi alır
+                    SqlDataReader sifreal = girisyapkomut.ExecuteReader();
+                    sifreal.Read();
+                    string alinansifre = sifreal["kullanici_sifre"].ToString();
+                    kullanicilarbaglanti.Close();
+                    if (kullanicisifre != alinansifre)  //girilen şifre ile veri tabanındaki şifre aynı mı diye bakıyor AYNI DEĞİLSE;
+                    {
+                        string message = "Lütfen kullanıcı adı veya şifrenizi kontrol edin!";
+                        string title = "UYARI";
+                        MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Warning);  // yanlış şifre girilirse
+                    }
+                    else    //girilen şifre doğruysa kitap kiralama formuna atıyor
+                    {
+                        FormKitapKiralama formac = new FormKitapKiralama();
+                        formac.txt_giris_metni.Text = Txt_Box_Kullanici_ismi.Text;  //girilen nicki kitap kiralama formundki labela yazıyor
+                        formac.Show();
+                        Son_Nick_Kaydet();
+                    }
+                    kullanicilarbaglanti.Close();
+                }
+                else    //girilen nickte kullanıcı yoksa
+                {
+                    string message = "Bu kullanıcı adında bir kullanıcı yok, kullanıcı adınızı kontrol edin!";
+                    string title = "UYARI";
+                    MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Warning);  // kullanıcı olmayan nick
+                }
+            }
+           
         }
 
         //Projenin ayarlar kısmına son girlen nick ve beni hatırla tuşunun verileri kaydediliyor

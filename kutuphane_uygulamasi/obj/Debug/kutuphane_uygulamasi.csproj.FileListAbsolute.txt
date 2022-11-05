@@ -23,3 +23,8 @@ C:\Users\alime\Desktop\kutuphane_uygulamasi\kutuphane_uygulamasi\obj\Debug\kutup
 C:\Users\alime\Desktop\kutuphane_uygulamasi\kutuphane_uygulamasi\obj\Debug\kutuphane_uygulamasi.pdb
 C:\Users\alime\Desktop\kutuphane_uygulamasi\kutuphane_uygulamasi\obj\Debug\kutuphane_uygulamasi.YeniUyelik.resources
 C:\Users\alime\Desktop\kutuphane_uygulamasi\kutuphane_uygulamasi\obj\Debug\kutuphane_uygulamasi.FormKitapKiralama.resources
+C:\Users\alime\Desktop\kutuphane_uygulamasi\kutuphane_uygulamasi\obj\Debug\kutuphane_uygulamasi.FormPersonel.resources
+C:\Users\alime\Desktop\kutuphane_uygulamasi\kutuphane_uygulamasi\obj\Debug\kutuphane_uygulamasi.FormPersonelKayit.resources
+C:\Users\alime\Desktop\kutuphane_uygulamasi\kutuphane_uygulamasi\obj\Debug\kutuphane_uygulamasi.FormYonetici.resources
+C:\Users\alime\Desktop\kutuphane_uygulamasi\kutuphane_uygulamasi\obj\Debug\kutuphane_uygulamasi.FormKitapBagisla.resources
+C:\Users\alime\Desktop\kutuphane_uygulamasi\kutuphane_uygulamasi\obj\Debug\kutuphane_uygulamasi.FormBagislananKitaplar.resources

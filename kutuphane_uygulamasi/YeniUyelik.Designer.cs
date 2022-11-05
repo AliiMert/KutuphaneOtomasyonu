@@ -30,7 +30,6 @@
         {
             this.txt_ad = new System.Windows.Forms.TextBox();
             this.txt_soyad = new System.Windows.Forms.TextBox();
-            this.txt_dgt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,6 +46,7 @@
             this.btn_Uye_Ol = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.txt_kullanici_nick = new System.Windows.Forms.TextBox();
+            this.txt_dgt = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // txt_ad
@@ -62,13 +62,6 @@
             this.txt_soyad.Name = "txt_soyad";
             this.txt_soyad.Size = new System.Drawing.Size(131, 20);
             this.txt_soyad.TabIndex = 1;
-            // 
-            // txt_dgt
-            // 
-            this.txt_dgt.Location = new System.Drawing.Point(139, 229);
-            this.txt_dgt.Name = "txt_dgt";
-            this.txt_dgt.Size = new System.Drawing.Size(109, 20);
-            this.txt_dgt.TabIndex = 2;
             // 
             // label1
             // 
@@ -111,7 +104,8 @@
             this.txt_cinsiyet.FormattingEnabled = true;
             this.txt_cinsiyet.Items.AddRange(new object[] {
             "Erkek",
-            "Kız"});
+            "Kız",
+            "Belirtmek İstemiyorum"});
             this.txt_cinsiyet.Location = new System.Drawing.Point(117, 181);
             this.txt_cinsiyet.Name = "txt_cinsiyet";
             this.txt_cinsiyet.Size = new System.Drawing.Size(131, 21);
@@ -212,11 +206,22 @@
             this.txt_kullanici_nick.Size = new System.Drawing.Size(132, 20);
             this.txt_kullanici_nick.TabIndex = 19;
             // 
+            // txt_dgt
+            // 
+            this.txt_dgt.Location = new System.Drawing.Point(148, 226);
+            this.txt_dgt.MaxDate = new System.DateTime(2007, 1, 1, 0, 0, 0, 0);
+            this.txt_dgt.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.txt_dgt.Name = "txt_dgt";
+            this.txt_dgt.Size = new System.Drawing.Size(200, 20);
+            this.txt_dgt.TabIndex = 20;
+            this.txt_dgt.Value = new System.DateTime(2007, 1, 1, 0, 0, 0, 0);
+            // 
             // YeniUyelik
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txt_dgt);
             this.Controls.Add(this.txt_kullanici_nick);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btn_Uye_Ol);
@@ -233,7 +238,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txt_dgt);
             this.Controls.Add(this.txt_soyad);
             this.Controls.Add(this.txt_ad);
             this.Name = "YeniUyelik";
@@ -247,7 +251,6 @@
 
         private System.Windows.Forms.TextBox txt_ad;
         private System.Windows.Forms.TextBox txt_soyad;
-        private System.Windows.Forms.TextBox txt_dgt;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -264,5 +267,6 @@
         private System.Windows.Forms.Button btn_Uye_Ol;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txt_kullanici_nick;
+        private System.Windows.Forms.DateTimePicker txt_dgt;
     }
 }

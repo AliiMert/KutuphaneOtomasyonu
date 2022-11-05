@@ -46,17 +46,5 @@ namespace kutuphane_uygulamasi.Properties {
                 this["NickHatirla"] = value;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string ayar {
-            get {
-                return ((string)(this["ayar"]));
-            }
-            set {
-                this["ayar"] = value;
-            }
-        }
     }
 }

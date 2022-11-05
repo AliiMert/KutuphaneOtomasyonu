@@ -37,6 +37,7 @@
             this.BTN_Yeni_uye = new System.Windows.Forms.Button();
             this.Pict_Box_Giris = new System.Windows.Forms.PictureBox();
             this.Btn_Giris_Yap = new System.Windows.Forms.Button();
+            this.chcbx_Personel = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.Pict_Box_Giris)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,10 +80,9 @@
             this.Txt_Box_Parola.Location = new System.Drawing.Point(9, 247);
             this.Txt_Box_Parola.Margin = new System.Windows.Forms.Padding(2);
             this.Txt_Box_Parola.Name = "Txt_Box_Parola";
+            this.Txt_Box_Parola.PasswordChar = '*';
             this.Txt_Box_Parola.Size = new System.Drawing.Size(192, 28);
             this.Txt_Box_Parola.TabIndex = 3;
-            this.Txt_Box_Parola.Text = "Parola Giriniz";
-            this.Txt_Box_Parola.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Box_Parola_KeyPress);
             // 
             // BTN_Parola
             // 
@@ -120,7 +120,7 @@
             // 
             // Btn_Giris_Yap
             // 
-            this.Btn_Giris_Yap.Location = new System.Drawing.Point(307, 225);
+            this.Btn_Giris_Yap.Location = new System.Drawing.Point(322, 247);
             this.Btn_Giris_Yap.Margin = new System.Windows.Forms.Padding(2);
             this.Btn_Giris_Yap.Name = "Btn_Giris_Yap";
             this.Btn_Giris_Yap.Size = new System.Drawing.Size(237, 63);
@@ -129,11 +129,22 @@
             this.Btn_Giris_Yap.UseVisualStyleBackColor = true;
             this.Btn_Giris_Yap.Click += new System.EventHandler(this.Btn_Giris_Yap_Click);
             // 
+            // chcbx_Personel
+            // 
+            this.chcbx_Personel.AutoSize = true;
+            this.chcbx_Personel.Location = new System.Drawing.Point(168, 226);
+            this.chcbx_Personel.Name = "chcbx_Personel";
+            this.chcbx_Personel.Size = new System.Drawing.Size(77, 17);
+            this.chcbx_Personel.TabIndex = 8;
+            this.chcbx_Personel.Text = "Personelim";
+            this.chcbx_Personel.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(622, 366);
+            this.Controls.Add(this.chcbx_Personel);
             this.Controls.Add(this.Btn_Giris_Yap);
             this.Controls.Add(this.Pict_Box_Giris);
             this.Controls.Add(this.BTN_Yeni_uye);
@@ -145,7 +156,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
-            this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.Pict_Box_Giris)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -156,11 +166,12 @@
 
         private System.Windows.Forms.CheckBox Chc_Box_Ad_Hatirla;
         private System.Windows.Forms.CheckBox Chc_Box_Parola;
-        private System.Windows.Forms.TextBox Txt_Box_Kullanici_ismi;
         private System.Windows.Forms.TextBox Txt_Box_Parola;
         private System.Windows.Forms.Button BTN_Parola;
         private System.Windows.Forms.Button BTN_Yeni_uye;
         private System.Windows.Forms.PictureBox Pict_Box_Giris;
         private System.Windows.Forms.Button Btn_Giris_Yap;
+        public System.Windows.Forms.TextBox Txt_Box_Kullanici_ismi;
+        private System.Windows.Forms.CheckBox chcbx_Personel;
     }
 }

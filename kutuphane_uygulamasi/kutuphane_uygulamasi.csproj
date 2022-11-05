@@ -58,11 +58,41 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBagislananKitaplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBagislananKitaplar.Designer.cs">
+      <DependentUpon>FormBagislananKitaplar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKitapBagisla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKitapBagisla.Designer.cs">
+      <DependentUpon>FormKitapBagisla.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormKitapKiralama.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormKitapKiralama.Designer.cs">
       <DependentUpon>FormKitapKiralama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPersonel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPersonel.Designer.cs">
+      <DependentUpon>FormPersonel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPersonelKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPersonelKayit.Designer.cs">
+      <DependentUpon>FormPersonelKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormYonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYonetici.Designer.cs">
+      <DependentUpon>FormYonetici.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,8 +108,23 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormBagislananKitaplar.resx">
+      <DependentUpon>FormBagislananKitaplar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKitapBagisla.resx">
+      <DependentUpon>FormKitapBagisla.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormKitapKiralama.resx">
       <DependentUpon>FormKitapKiralama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPersonel.resx">
+      <DependentUpon>FormPersonel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPersonelKayit.resx">
+      <DependentUpon>FormPersonelKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormYonetici.resx">
+      <DependentUpon>FormYonetici.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

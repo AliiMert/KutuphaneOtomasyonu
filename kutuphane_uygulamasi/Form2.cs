@@ -35,8 +35,8 @@ namespace kutuphane_uygulamasi
             if(yenisifre == yenisifretekrar)    //girilen sifreler aynı mı
             {
                 kullanicilarbaglanti.Open();
-                SqlCommand guvenliksorusudogrulamakomut = new SqlCommand("SELECT kullanici_guvenlik_sorusu_cevabi FROM Kutuphane_Kullanicilar WHERE kullanici_nick = '" + kullanicinick + "'"
-                   , kullanicilarbaglanti);
+                SqlCommand guvenliksorusudogrulamakomut = new SqlCommand("SELECT kullanici_guvenlik_sorusu_cevabi FROM Kutuphane_Kullanicilar WHERE kullanici_nick = '" 
+                    + kullanicinick + "'", kullanicilarbaglanti);
                 guvenliksorusudogrulamakomut.ExecuteNonQuery();
                 SqlDataReader guvenliksorusucevabial = guvenliksorusudogrulamakomut.ExecuteReader();
                 guvenliksorusucevabial.Read();

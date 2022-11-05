@@ -36,6 +36,9 @@
             this.txt_secilen_kitaplar = new System.Windows.Forms.Label();
             this.txt_giris_metni = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lbl_hos_geldin = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btn_kitap_bagisla = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.kitaplar_listesi)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +65,7 @@
             // kitaplar_listesi
             // 
             this.kitaplar_listesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.kitaplar_listesi.Location = new System.Drawing.Point(58, 89);
+            this.kitaplar_listesi.Location = new System.Drawing.Point(51, 89);
             this.kitaplar_listesi.Name = "kitaplar_listesi";
             this.kitaplar_listesi.Size = new System.Drawing.Size(380, 269);
             this.kitaplar_listesi.TabIndex = 2;
@@ -85,7 +88,7 @@
             // txt_giris_metni
             // 
             this.txt_giris_metni.AutoSize = true;
-            this.txt_giris_metni.Location = new System.Drawing.Point(483, 144);
+            this.txt_giris_metni.Location = new System.Drawing.Point(564, 134);
             this.txt_giris_metni.Name = "txt_giris_metni";
             this.txt_giris_metni.Size = new System.Drawing.Size(0, 13);
             this.txt_giris_metni.TabIndex = 5;
@@ -94,11 +97,42 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // lbl_hos_geldin
+            // 
+            this.lbl_hos_geldin.AutoSize = true;
+            this.lbl_hos_geldin.Location = new System.Drawing.Point(505, 134);
+            this.lbl_hos_geldin.Name = "lbl_hos_geldin";
+            this.lbl_hos_geldin.Size = new System.Drawing.Size(59, 13);
+            this.lbl_hos_geldin.TabIndex = 6;
+            this.lbl_hos_geldin.Text = "Hoş Geldin";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(79, 231);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 7;
+            this.dateTimePicker1.Visible = false;
+            // 
+            // btn_kitap_bagisla
+            // 
+            this.btn_kitap_bagisla.Location = new System.Drawing.Point(516, 374);
+            this.btn_kitap_bagisla.Name = "btn_kitap_bagisla";
+            this.btn_kitap_bagisla.Size = new System.Drawing.Size(155, 37);
+            this.btn_kitap_bagisla.TabIndex = 8;
+            this.btn_kitap_bagisla.Text = "Kitap Bağışla";
+            this.btn_kitap_bagisla.UseVisualStyleBackColor = true;
+            this.btn_kitap_bagisla.Click += new System.EventHandler(this.btn_kitap_bagisla_Click);
+            // 
             // FormKitapKiralama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_kitap_bagisla);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.lbl_hos_geldin);
             this.Controls.Add(this.txt_giris_metni);
             this.Controls.Add(this.txt_secilen_kitaplar);
             this.Controls.Add(this.kiralama_tarihi);
@@ -121,7 +155,10 @@
         private System.Windows.Forms.DataGridView kitaplar_listesi;
         private System.Windows.Forms.Label kiralama_tarihi;
         private System.Windows.Forms.Label txt_secilen_kitaplar;
-        private System.Windows.Forms.Label txt_giris_metni;
         private System.Windows.Forms.Timer timer1;
+        public System.Windows.Forms.Label txt_giris_metni;
+        private System.Windows.Forms.Label lbl_hos_geldin;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btn_kitap_bagisla;
     }
 }
