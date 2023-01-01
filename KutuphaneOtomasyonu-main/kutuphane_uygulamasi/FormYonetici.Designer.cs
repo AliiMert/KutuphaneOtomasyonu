@@ -55,9 +55,10 @@
             this.button1.BackColor = System.Drawing.Color.LightCoral;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(153, 119);
+            this.button1.Location = new System.Drawing.Point(204, 146);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(245, 52);
+            this.button1.Size = new System.Drawing.Size(327, 64);
             this.button1.TabIndex = 2;
             this.button1.Text = "Giriş ";
             this.button1.UseVisualStyleBackColor = false;
@@ -68,7 +69,8 @@
             this.lbl_yonetici_nick.AutoSize = true;
             this.lbl_yonetici_nick.BackColor = System.Drawing.Color.Transparent;
             this.lbl_yonetici_nick.Font = new System.Drawing.Font("Courier New", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_yonetici_nick.Location = new System.Drawing.Point(91, 37);
+            this.lbl_yonetici_nick.Location = new System.Drawing.Point(121, 46);
+            this.lbl_yonetici_nick.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_yonetici_nick.Name = "lbl_yonetici_nick";
             this.lbl_yonetici_nick.Size = new System.Drawing.Size(170, 17);
             this.lbl_yonetici_nick.TabIndex = 3;
@@ -78,7 +80,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Courier New", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(92, 84);
+            this.label1.Location = new System.Drawing.Point(123, 103);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(188, 17);
             this.label1.TabIndex = 4;
@@ -89,10 +92,10 @@
             this.Img_Button_Exit.BackColor = System.Drawing.Color.LightCoral;
             this.Img_Button_Exit.Image = ((System.Drawing.Image)(resources.GetObject("Img_Button_Exit.Image")));
             this.Img_Button_Exit.ImageActive = null;
-            this.Img_Button_Exit.Location = new System.Drawing.Point(464, 10);
-            this.Img_Button_Exit.Margin = new System.Windows.Forms.Padding(2);
+            this.Img_Button_Exit.Location = new System.Drawing.Point(619, 12);
+            this.Img_Button_Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Img_Button_Exit.Name = "Img_Button_Exit";
-            this.Img_Button_Exit.Size = new System.Drawing.Size(49, 46);
+            this.Img_Button_Exit.Size = new System.Drawing.Size(65, 57);
             this.Img_Button_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Img_Button_Exit.TabIndex = 11;
             this.Img_Button_Exit.TabStop = false;
@@ -108,10 +111,10 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(84, 176);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(112, 217);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(372, 197);
+            this.pictureBox1.Size = new System.Drawing.Size(496, 242);
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
@@ -128,10 +131,10 @@
             this.txtbx_yonetici_nick.LineIdleColor = System.Drawing.Color.LightCoral;
             this.txtbx_yonetici_nick.LineMouseHoverColor = System.Drawing.Color.Black;
             this.txtbx_yonetici_nick.LineThickness = 7;
-            this.txtbx_yonetici_nick.Location = new System.Drawing.Point(251, 27);
-            this.txtbx_yonetici_nick.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtbx_yonetici_nick.Location = new System.Drawing.Point(335, 33);
+            this.txtbx_yonetici_nick.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.txtbx_yonetici_nick.Name = "txtbx_yonetici_nick";
-            this.txtbx_yonetici_nick.Size = new System.Drawing.Size(204, 36);
+            this.txtbx_yonetici_nick.Size = new System.Drawing.Size(272, 44);
             this.txtbx_yonetici_nick.TabIndex = 0;
             this.txtbx_yonetici_nick.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -148,20 +151,20 @@
             this.txtbx_yonetici_sifre.LineIdleColor = System.Drawing.Color.LightCoral;
             this.txtbx_yonetici_sifre.LineMouseHoverColor = System.Drawing.Color.Black;
             this.txtbx_yonetici_sifre.LineThickness = 7;
-            this.txtbx_yonetici_sifre.Location = new System.Drawing.Point(266, 76);
-            this.txtbx_yonetici_sifre.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtbx_yonetici_sifre.Location = new System.Drawing.Point(355, 94);
+            this.txtbx_yonetici_sifre.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.txtbx_yonetici_sifre.Name = "txtbx_yonetici_sifre";
-            this.txtbx_yonetici_sifre.Size = new System.Drawing.Size(190, 36);
+            this.txtbx_yonetici_sifre.Size = new System.Drawing.Size(253, 44);
             this.txtbx_yonetici_sifre.TabIndex = 1;
             this.txtbx_yonetici_sifre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightCoral;
-            this.panel1.Location = new System.Drawing.Point(454, -11);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(605, -14);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(90, 395);
+            this.panel1.Size = new System.Drawing.Size(120, 486);
             this.panel1.TabIndex = 18;
             // 
             // panel2
@@ -169,10 +172,10 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(-2, -11);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(-3, -14);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(88, 395);
+            this.panel2.Size = new System.Drawing.Size(117, 486);
             this.panel2.TabIndex = 19;
             // 
             // label3
@@ -180,7 +183,8 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(3, 95);
+            this.label3.Location = new System.Drawing.Point(4, 117);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 18);
             this.label3.TabIndex = 21;
@@ -191,7 +195,8 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(3, 47);
+            this.label2.Location = new System.Drawing.Point(4, 58);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 18);
             this.label2.TabIndex = 20;
@@ -214,10 +219,10 @@
             // 
             // FormYonetici
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(531, 374);
+            this.ClientSize = new System.Drawing.Size(708, 460);
             this.Controls.Add(this.txtbx_yonetici_sifre);
             this.Controls.Add(this.txtbx_yonetici_nick);
             this.Controls.Add(this.pictureBox1);
@@ -228,6 +233,8 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormYonetici";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormYonetici";

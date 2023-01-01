@@ -66,10 +66,10 @@
             this.BTN_Parola.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_Parola.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BTN_Parola.ForeColor = System.Drawing.Color.White;
-            this.BTN_Parola.Location = new System.Drawing.Point(378, 275);
-            this.BTN_Parola.Margin = new System.Windows.Forms.Padding(2);
+            this.BTN_Parola.Location = new System.Drawing.Point(504, 338);
+            this.BTN_Parola.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BTN_Parola.Name = "BTN_Parola";
-            this.BTN_Parola.Size = new System.Drawing.Size(191, 36);
+            this.BTN_Parola.Size = new System.Drawing.Size(255, 44);
             this.BTN_Parola.TabIndex = 7;
             this.BTN_Parola.Text = "Parolamı Unuttum";
             this.BTN_Parola.UseVisualStyleBackColor = false;
@@ -82,10 +82,10 @@
             this.BTN_Yeni_uye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_Yeni_uye.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.BTN_Yeni_uye.ForeColor = System.Drawing.Color.LightCoral;
-            this.BTN_Yeni_uye.Location = new System.Drawing.Point(18, 383);
-            this.BTN_Yeni_uye.Margin = new System.Windows.Forms.Padding(2);
+            this.BTN_Yeni_uye.Location = new System.Drawing.Point(24, 471);
+            this.BTN_Yeni_uye.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BTN_Yeni_uye.Name = "BTN_Yeni_uye";
-            this.BTN_Yeni_uye.Size = new System.Drawing.Size(294, 39);
+            this.BTN_Yeni_uye.Size = new System.Drawing.Size(392, 48);
             this.BTN_Yeni_uye.TabIndex = 0;
             this.BTN_Yeni_uye.Text = "Yeni üye";
             this.BTN_Yeni_uye.UseVisualStyleBackColor = false;
@@ -98,10 +98,10 @@
             this.Btn_Giris_Yap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Giris_Yap.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Btn_Giris_Yap.ForeColor = System.Drawing.Color.White;
-            this.Btn_Giris_Yap.Location = new System.Drawing.Point(376, 383);
-            this.Btn_Giris_Yap.Margin = new System.Windows.Forms.Padding(2);
+            this.Btn_Giris_Yap.Location = new System.Drawing.Point(501, 471);
+            this.Btn_Giris_Yap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_Giris_Yap.Name = "Btn_Giris_Yap";
-            this.Btn_Giris_Yap.Size = new System.Drawing.Size(294, 39);
+            this.Btn_Giris_Yap.Size = new System.Drawing.Size(392, 48);
             this.Btn_Giris_Yap.TabIndex = 3;
             this.Btn_Giris_Yap.Text = "Giriş yapınız";
             this.Btn_Giris_Yap.UseVisualStyleBackColor = false;
@@ -115,18 +115,18 @@
             this.panel1.Controls.Add(this.BTN_Yeni_uye);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(343, 463);
+            this.panel1.Size = new System.Drawing.Size(457, 570);
             this.panel1.TabIndex = 0;
             // 
             // Picture_box_Giris
             // 
             this.Picture_box_Giris.Image = ((System.Drawing.Image)(resources.GetObject("Picture_box_Giris.Image")));
-            this.Picture_box_Giris.Location = new System.Drawing.Point(18, 126);
-            this.Picture_box_Giris.Margin = new System.Windows.Forms.Padding(2);
+            this.Picture_box_Giris.Location = new System.Drawing.Point(24, 155);
+            this.Picture_box_Giris.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Picture_box_Giris.Name = "Picture_box_Giris";
-            this.Picture_box_Giris.Size = new System.Drawing.Size(294, 220);
+            this.Picture_box_Giris.Size = new System.Drawing.Size(392, 271);
             this.Picture_box_Giris.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Picture_box_Giris.TabIndex = 13;
             this.Picture_box_Giris.TabStop = false;
@@ -137,8 +137,7 @@
             this.label1.BackColor = System.Drawing.Color.LightCoral;
             this.label1.Font = new System.Drawing.Font("Courier New", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(9, 7);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(342, 108);
             this.label1.TabIndex = 0;
@@ -155,10 +154,10 @@
             this.Img_Button_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Img_Button_Exit.Image = ((System.Drawing.Image)(resources.GetObject("Img_Button_Exit.Image")));
             this.Img_Button_Exit.ImageActive = null;
-            this.Img_Button_Exit.Location = new System.Drawing.Point(716, 7);
-            this.Img_Button_Exit.Margin = new System.Windows.Forms.Padding(2);
+            this.Img_Button_Exit.Location = new System.Drawing.Point(955, 9);
+            this.Img_Button_Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Img_Button_Exit.Name = "Img_Button_Exit";
-            this.Img_Button_Exit.Size = new System.Drawing.Size(49, 46);
+            this.Img_Button_Exit.Size = new System.Drawing.Size(65, 57);
             this.Img_Button_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Img_Button_Exit.TabIndex = 10;
             this.Img_Button_Exit.TabStop = false;
@@ -170,8 +169,7 @@
             this.Label_Giris_Yap.AutoSize = true;
             this.Label_Giris_Yap.Font = new System.Drawing.Font("Courier New", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Label_Giris_Yap.ForeColor = System.Drawing.Color.LightCoral;
-            this.Label_Giris_Yap.Location = new System.Drawing.Point(370, 42);
-            this.Label_Giris_Yap.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Label_Giris_Yap.Location = new System.Drawing.Point(493, 52);
             this.Label_Giris_Yap.Name = "Label_Giris_Yap";
             this.Label_Giris_Yap.Size = new System.Drawing.Size(206, 40);
             this.Label_Giris_Yap.TabIndex = 0;
@@ -190,10 +188,10 @@
             this.Txt_Box_Kullanici_ism.LineIdleColor = System.Drawing.Color.LightCoral;
             this.Txt_Box_Kullanici_ism.LineMouseHoverColor = System.Drawing.Color.Black;
             this.Txt_Box_Kullanici_ism.LineThickness = 7;
-            this.Txt_Box_Kullanici_ism.Location = new System.Drawing.Point(376, 117);
-            this.Txt_Box_Kullanici_ism.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Txt_Box_Kullanici_ism.Location = new System.Drawing.Point(501, 144);
+            this.Txt_Box_Kullanici_ism.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.Txt_Box_Kullanici_ism.Name = "Txt_Box_Kullanici_ism";
-            this.Txt_Box_Kullanici_ism.Size = new System.Drawing.Size(316, 36);
+            this.Txt_Box_Kullanici_ism.Size = new System.Drawing.Size(421, 44);
             this.Txt_Box_Kullanici_ism.TabIndex = 1;
             this.Txt_Box_Kullanici_ism.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Txt_Box_Kullanici_ism.Enter += new System.EventHandler(this.Txt_Box_Kullanici_ism_Enter);
@@ -211,10 +209,10 @@
             this.Txt_Box_Parola.LineIdleColor = System.Drawing.Color.LightCoral;
             this.Txt_Box_Parola.LineMouseHoverColor = System.Drawing.Color.Black;
             this.Txt_Box_Parola.LineThickness = 7;
-            this.Txt_Box_Parola.Location = new System.Drawing.Point(376, 234);
-            this.Txt_Box_Parola.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Txt_Box_Parola.Location = new System.Drawing.Point(501, 288);
+            this.Txt_Box_Parola.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.Txt_Box_Parola.Name = "Txt_Box_Parola";
-            this.Txt_Box_Parola.Size = new System.Drawing.Size(316, 36);
+            this.Txt_Box_Parola.Size = new System.Drawing.Size(421, 44);
             this.Txt_Box_Parola.TabIndex = 2;
             this.Txt_Box_Parola.Text = "Parolanızı Girin";
             this.Txt_Box_Parola.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -227,7 +225,8 @@
             this.Chc_Box_Parola.Checked = false;
             this.Chc_Box_Parola.CheckedOnColor = System.Drawing.Color.LightCoral;
             this.Chc_Box_Parola.ForeColor = System.Drawing.Color.Black;
-            this.Chc_Box_Parola.Location = new System.Drawing.Point(582, 284);
+            this.Chc_Box_Parola.Location = new System.Drawing.Point(776, 350);
+            this.Chc_Box_Parola.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Chc_Box_Parola.Name = "Chc_Box_Parola";
             this.Chc_Box_Parola.Size = new System.Drawing.Size(20, 20);
             this.Chc_Box_Parola.TabIndex = 6;
@@ -238,8 +237,7 @@
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.LightCoral;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(607, 284);
-            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(809, 350);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(158, 18);
             this.bunifuCustomLabel1.TabIndex = 8;
@@ -252,7 +250,8 @@
             this.chcbx_Personel.Checked = false;
             this.chcbx_Personel.CheckedOnColor = System.Drawing.Color.LightCoral;
             this.chcbx_Personel.ForeColor = System.Drawing.Color.Black;
-            this.chcbx_Personel.Location = new System.Drawing.Point(376, 195);
+            this.chcbx_Personel.Location = new System.Drawing.Point(501, 240);
+            this.chcbx_Personel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.chcbx_Personel.Name = "chcbx_Personel";
             this.chcbx_Personel.Size = new System.Drawing.Size(20, 20);
             this.chcbx_Personel.TabIndex = 5;
@@ -263,8 +262,7 @@
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.LightCoral;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(397, 195);
-            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(529, 240);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(108, 18);
             this.bunifuCustomLabel2.TabIndex = 19;
@@ -277,7 +275,8 @@
             this.Chc_Box_Ad_Hatirla.Checked = false;
             this.Chc_Box_Ad_Hatirla.CheckedOnColor = System.Drawing.Color.LightCoral;
             this.Chc_Box_Ad_Hatirla.ForeColor = System.Drawing.Color.Black;
-            this.Chc_Box_Ad_Hatirla.Location = new System.Drawing.Point(376, 172);
+            this.Chc_Box_Ad_Hatirla.Location = new System.Drawing.Point(501, 212);
+            this.Chc_Box_Ad_Hatirla.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Chc_Box_Ad_Hatirla.Name = "Chc_Box_Ad_Hatirla";
             this.Chc_Box_Ad_Hatirla.Size = new System.Drawing.Size(20, 20);
             this.Chc_Box_Ad_Hatirla.TabIndex = 4;
@@ -287,8 +286,7 @@
             this.bunifuCustomLabel3.AutoSize = true;
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.LightCoral;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(397, 172);
-            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(529, 212);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(238, 18);
             this.bunifuCustomLabel3.TabIndex = 21;
@@ -312,10 +310,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(652, 102);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(869, 126);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 41);
+            this.pictureBox1.Size = new System.Drawing.Size(53, 50);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
@@ -323,20 +321,20 @@
             // PictureBox_Lock_Unlock
             // 
             this.PictureBox_Lock_Unlock.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox_Lock_Unlock.Image")));
-            this.PictureBox_Lock_Unlock.Location = new System.Drawing.Point(652, 224);
-            this.PictureBox_Lock_Unlock.Margin = new System.Windows.Forms.Padding(2);
+            this.PictureBox_Lock_Unlock.Location = new System.Drawing.Point(869, 276);
+            this.PictureBox_Lock_Unlock.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PictureBox_Lock_Unlock.Name = "PictureBox_Lock_Unlock";
-            this.PictureBox_Lock_Unlock.Size = new System.Drawing.Size(40, 37);
+            this.PictureBox_Lock_Unlock.Size = new System.Drawing.Size(53, 46);
             this.PictureBox_Lock_Unlock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox_Lock_Unlock.TabIndex = 23;
             this.PictureBox_Lock_Unlock.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(776, 463);
+            this.ClientSize = new System.Drawing.Size(1035, 570);
             this.Controls.Add(this.PictureBox_Lock_Unlock);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bunifuCustomLabel3);
@@ -353,7 +351,8 @@
             this.Controls.Add(this.Img_Button_Exit);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);

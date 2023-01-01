@@ -49,9 +49,10 @@
             this.btn_kitap_bagisla_islemi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_kitap_bagisla_islemi.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.btn_kitap_bagisla_islemi.ForeColor = System.Drawing.Color.White;
-            this.btn_kitap_bagisla_islemi.Location = new System.Drawing.Point(18, 207);
+            this.btn_kitap_bagisla_islemi.Location = new System.Drawing.Point(24, 255);
+            this.btn_kitap_bagisla_islemi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_kitap_bagisla_islemi.Name = "btn_kitap_bagisla_islemi";
-            this.btn_kitap_bagisla_islemi.Size = new System.Drawing.Size(390, 44);
+            this.btn_kitap_bagisla_islemi.Size = new System.Drawing.Size(520, 54);
             this.btn_kitap_bagisla_islemi.TabIndex = 3;
             this.btn_kitap_bagisla_islemi.Text = "Kitabı Bağışla";
             this.btn_kitap_bagisla_islemi.UseVisualStyleBackColor = false;
@@ -60,17 +61,19 @@
             // lbl_nick
             // 
             this.lbl_nick.AutoSize = true;
-            this.lbl_nick.Location = new System.Drawing.Point(302, 93);
+            this.lbl_nick.Location = new System.Drawing.Point(403, 114);
+            this.lbl_nick.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_nick.Name = "lbl_nick";
-            this.lbl_nick.Size = new System.Drawing.Size(0, 13);
+            this.lbl_nick.Size = new System.Drawing.Size(0, 16);
             this.lbl_nick.TabIndex = 3;
             // 
             // lbl_metin
             // 
             this.lbl_metin.Font = new System.Drawing.Font("Courier New", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_metin.Location = new System.Drawing.Point(18, 142);
+            this.lbl_metin.Location = new System.Drawing.Point(24, 175);
+            this.lbl_metin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_metin.Name = "lbl_metin";
-            this.lbl_metin.Size = new System.Drawing.Size(390, 62);
+            this.lbl_metin.Size = new System.Drawing.Size(520, 76);
             this.lbl_metin.TabIndex = 5;
             this.lbl_metin.Text = "!!! Kitap bağışlama işlemini bitirdikten sonra kitabı kütüphane görevlisine tesli" +
     "m etmeyi unutmayınız. !!!";
@@ -85,10 +88,10 @@
             this.Img_Button_Exit.BackColor = System.Drawing.Color.White;
             this.Img_Button_Exit.Image = ((System.Drawing.Image)(resources.GetObject("Img_Button_Exit.Image")));
             this.Img_Button_Exit.ImageActive = null;
-            this.Img_Button_Exit.Location = new System.Drawing.Point(348, 26);
-            this.Img_Button_Exit.Margin = new System.Windows.Forms.Padding(2);
+            this.Img_Button_Exit.Location = new System.Drawing.Point(464, 32);
+            this.Img_Button_Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Img_Button_Exit.Name = "Img_Button_Exit";
-            this.Img_Button_Exit.Size = new System.Drawing.Size(49, 46);
+            this.Img_Button_Exit.Size = new System.Drawing.Size(65, 57);
             this.Img_Button_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Img_Button_Exit.TabIndex = 11;
             this.Img_Button_Exit.TabStop = false;
@@ -107,10 +110,10 @@
             this.txtbx_bagislanan_kitap_adi.LineIdleColor = System.Drawing.Color.LightCoral;
             this.txtbx_bagislanan_kitap_adi.LineMouseHoverColor = System.Drawing.Color.Black;
             this.txtbx_bagislanan_kitap_adi.LineThickness = 3;
-            this.txtbx_bagislanan_kitap_adi.Location = new System.Drawing.Point(18, 51);
-            this.txtbx_bagislanan_kitap_adi.Margin = new System.Windows.Forms.Padding(4);
+            this.txtbx_bagislanan_kitap_adi.Location = new System.Drawing.Point(24, 63);
+            this.txtbx_bagislanan_kitap_adi.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtbx_bagislanan_kitap_adi.Name = "txtbx_bagislanan_kitap_adi";
-            this.txtbx_bagislanan_kitap_adi.Size = new System.Drawing.Size(263, 31);
+            this.txtbx_bagislanan_kitap_adi.Size = new System.Drawing.Size(351, 38);
             this.txtbx_bagislanan_kitap_adi.TabIndex = 1;
             this.txtbx_bagislanan_kitap_adi.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -120,9 +123,10 @@
             this.BTN_Geri.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_Geri.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold);
             this.BTN_Geri.ForeColor = System.Drawing.Color.White;
-            this.BTN_Geri.Location = new System.Drawing.Point(18, 252);
+            this.BTN_Geri.Location = new System.Drawing.Point(24, 310);
+            this.BTN_Geri.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BTN_Geri.Name = "BTN_Geri";
-            this.BTN_Geri.Size = new System.Drawing.Size(390, 44);
+            this.BTN_Geri.Size = new System.Drawing.Size(520, 54);
             this.BTN_Geri.TabIndex = 4;
             this.BTN_Geri.Text = "Geri dön ";
             this.BTN_Geri.UseVisualStyleBackColor = false;
@@ -140,10 +144,10 @@
             this.txtbx_bagislanan_kitap_yazar.LineIdleColor = System.Drawing.Color.LightCoral;
             this.txtbx_bagislanan_kitap_yazar.LineMouseHoverColor = System.Drawing.Color.Black;
             this.txtbx_bagislanan_kitap_yazar.LineThickness = 3;
-            this.txtbx_bagislanan_kitap_yazar.Location = new System.Drawing.Point(16, 93);
-            this.txtbx_bagislanan_kitap_yazar.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.txtbx_bagislanan_kitap_yazar.Location = new System.Drawing.Point(21, 114);
+            this.txtbx_bagislanan_kitap_yazar.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
             this.txtbx_bagislanan_kitap_yazar.Name = "txtbx_bagislanan_kitap_yazar";
-            this.txtbx_bagislanan_kitap_yazar.Size = new System.Drawing.Size(266, 36);
+            this.txtbx_bagislanan_kitap_yazar.Size = new System.Drawing.Size(355, 44);
             this.txtbx_bagislanan_kitap_yazar.TabIndex = 2;
             this.txtbx_bagislanan_kitap_yazar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -159,10 +163,10 @@
             // 
             // FormKitapBagisla
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(420, 306);
+            this.ClientSize = new System.Drawing.Size(560, 377);
             this.Controls.Add(this.txtbx_bagislanan_kitap_yazar);
             this.Controls.Add(this.BTN_Geri);
             this.Controls.Add(this.txtbx_bagislanan_kitap_adi);
@@ -171,6 +175,8 @@
             this.Controls.Add(this.lbl_nick);
             this.Controls.Add(this.btn_kitap_bagisla_islemi);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormKitapBagisla";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormKitapBagisla";

@@ -51,29 +51,32 @@
             this.bagislanankitaplistesi.BackgroundColor = System.Drawing.Color.LightCoral;
             this.bagislanankitaplistesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.bagislanankitaplistesi.GridColor = System.Drawing.Color.LightCoral;
-            this.bagislanankitaplistesi.Location = new System.Drawing.Point(57, 79);
+            this.bagislanankitaplistesi.Location = new System.Drawing.Point(76, 97);
+            this.bagislanankitaplistesi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bagislanankitaplistesi.Name = "bagislanankitaplistesi";
             this.bagislanankitaplistesi.RowHeadersWidth = 51;
-            this.bagislanankitaplistesi.Size = new System.Drawing.Size(501, 187);
+            this.bagislanankitaplistesi.Size = new System.Drawing.Size(668, 230);
             this.bagislanankitaplistesi.TabIndex = 0;
             // 
             // kitaplarlistesi
             // 
             this.kitaplarlistesi.BackgroundColor = System.Drawing.Color.White;
             this.kitaplarlistesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.kitaplarlistesi.Location = new System.Drawing.Point(57, 329);
+            this.kitaplarlistesi.Location = new System.Drawing.Point(76, 405);
+            this.kitaplarlistesi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.kitaplarlistesi.Name = "kitaplarlistesi";
             this.kitaplarlistesi.RowHeadersWidth = 51;
-            this.kitaplarlistesi.Size = new System.Drawing.Size(501, 178);
+            this.kitaplarlistesi.Size = new System.Drawing.Size(668, 219);
             this.kitaplarlistesi.TabIndex = 1;
             // 
             // btn_bagislanan_kitaplari_gstr
             // 
             this.btn_bagislanan_kitaplari_gstr.BackColor = System.Drawing.Color.LightCoral;
             this.btn_bagislanan_kitaplari_gstr.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btn_bagislanan_kitaplari_gstr.Location = new System.Drawing.Point(232, 33);
+            this.btn_bagislanan_kitaplari_gstr.Location = new System.Drawing.Point(309, 41);
+            this.btn_bagislanan_kitaplari_gstr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_bagislanan_kitaplari_gstr.Name = "btn_bagislanan_kitaplari_gstr";
-            this.btn_bagislanan_kitaplari_gstr.Size = new System.Drawing.Size(166, 40);
+            this.btn_bagislanan_kitaplari_gstr.Size = new System.Drawing.Size(221, 49);
             this.btn_bagislanan_kitaplari_gstr.TabIndex = 2;
             this.btn_bagislanan_kitaplari_gstr.Text = "Bağışlanan Kitapları Göster";
             this.btn_bagislanan_kitaplari_gstr.UseVisualStyleBackColor = false;
@@ -84,9 +87,10 @@
             this.btn_kitap_ekle.BackColor = System.Drawing.Color.White;
             this.btn_kitap_ekle.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold);
             this.btn_kitap_ekle.ForeColor = System.Drawing.Color.Black;
-            this.btn_kitap_ekle.Location = new System.Drawing.Point(218, 285);
+            this.btn_kitap_ekle.Location = new System.Drawing.Point(291, 351);
+            this.btn_kitap_ekle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_kitap_ekle.Name = "btn_kitap_ekle";
-            this.btn_kitap_ekle.Size = new System.Drawing.Size(202, 44);
+            this.btn_kitap_ekle.Size = new System.Drawing.Size(269, 54);
             this.btn_kitap_ekle.TabIndex = 3;
             this.btn_kitap_ekle.Text = "Bağışlanan kitabı kütüphaneye ekle";
             this.btn_kitap_ekle.UseVisualStyleBackColor = false;
@@ -102,10 +106,10 @@
             this.Img_Button_Exit.BackColor = System.Drawing.Color.White;
             this.Img_Button_Exit.Image = ((System.Drawing.Image)(resources.GetObject("Img_Button_Exit.Image")));
             this.Img_Button_Exit.ImageActive = null;
-            this.Img_Button_Exit.Location = new System.Drawing.Point(598, 11);
-            this.Img_Button_Exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Img_Button_Exit.Location = new System.Drawing.Point(797, 14);
+            this.Img_Button_Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Img_Button_Exit.Name = "Img_Button_Exit";
-            this.Img_Button_Exit.Size = new System.Drawing.Size(49, 46);
+            this.Img_Button_Exit.Size = new System.Drawing.Size(65, 57);
             this.Img_Button_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Img_Button_Exit.TabIndex = 11;
             this.Img_Button_Exit.TabStop = false;
@@ -125,10 +129,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightCoral;
-            this.panel1.Location = new System.Drawing.Point(-8, 282);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(-11, 347);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(671, 236);
+            this.panel1.Size = new System.Drawing.Size(895, 290);
             this.panel1.TabIndex = 12;
             // 
             // bunifuElipse4
@@ -143,10 +147,10 @@
             // 
             // FormBagislananKitaplar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(658, 528);
+            this.ClientSize = new System.Drawing.Size(877, 650);
             this.Controls.Add(this.Img_Button_Exit);
             this.Controls.Add(this.btn_kitap_ekle);
             this.Controls.Add(this.btn_bagislanan_kitaplari_gstr);
@@ -154,6 +158,8 @@
             this.Controls.Add(this.bagislanankitaplistesi);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormBagislananKitaplar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormBagislananKitaplar";
