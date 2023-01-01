@@ -70,3 +70,7 @@ C:\Users\alime\Desktop\library-main\KutuphaneOtomasyonu-main\kutuphane_uygulamas
 C:\Users\alime\Desktop\library-main\KutuphaneOtomasyonu-main\kutuphane_uygulamasi\obj\Debug\kutuphane_uygulamasi.csproj.CopyComplete
 C:\Users\alime\Desktop\library-main\KutuphaneOtomasyonu-main\kutuphane_uygulamasi\obj\Debug\kutuphane_uygulamasi.exe
 C:\Users\alime\Desktop\library-main\KutuphaneOtomasyonu-main\kutuphane_uygulamasi\obj\Debug\kutuphane_uygulamasi.pdb
+C:\Users\alime\Desktop\library-main\KutuphaneOtomasyonu-main\kutuphane_uygulamasi\bin\Debug\kutuphane_uygulamasi.exe.manifest
+C:\Users\alime\Desktop\library-main\KutuphaneOtomasyonu-main\kutuphane_uygulamasi\bin\Debug\kutuphane_uygulamasi.application
+C:\Users\alime\Desktop\library-main\KutuphaneOtomasyonu-main\kutuphane_uygulamasi\obj\Debug\kutuphane_uygulamasi.exe.manifest
+C:\Users\alime\Desktop\library-main\KutuphaneOtomasyonu-main\kutuphane_uygulamasi\obj\Debug\kutuphane_uygulamasi.application

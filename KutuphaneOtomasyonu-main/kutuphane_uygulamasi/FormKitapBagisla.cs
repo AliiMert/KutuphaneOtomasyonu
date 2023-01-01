@@ -46,6 +46,7 @@ namespace kutuphane_uygulamasi
                 string message = "Kitap bağışlama işlemi başarılı.";
                 string title = "BAŞARILI";
                 MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Asterisk);   //kitap bağışlama başarılı mesajı veriyor
+                Hide();
 
             }
         }

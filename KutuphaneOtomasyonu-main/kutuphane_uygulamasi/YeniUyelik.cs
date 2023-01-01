@@ -57,6 +57,7 @@ namespace kutuphane_uygulamasi
             }
             else
             {
+                string selam = @"\";
                 // bu nick kullanılıyor mu kontrolü
                 kullanicilarbaglanti.Open();
                 SqlCommand nickvarmisorgu = new SqlCommand("SELECT Count(kullanici_nick) FROM Kutuphane_Kullanicilar WHERE kullanici_nick = '" + txt_kullanici_nick.Text + "'"

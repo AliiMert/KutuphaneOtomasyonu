@@ -76,7 +76,7 @@ namespace kutuphane_uygulamasi
                 string secilenkitap = kitaplar_listesi.CurrentRow.Cells["Kitap_Adi"].Value.ToString();
                 kitapkiralamakomut.Parameters.AddWithValue("@kitapadi", secilenkitap);
                 kitapkiralamakomut.Parameters.AddWithValue("@aliştarihi", DateTime.Now);        //o günün tarihini alış tarihine atar
-                kitapkiralamakomut.Parameters.AddWithValue("@teslimtarihi", dateTimePicker1.Value.AddDays(15));     //o günkü tarihe 15 gün ekleyerek veritabanındaki teslim tarihine atar
+                kitapkiralamakomut.Parameters.AddWithValue("@teslimtarihi",DateTime.Now.AddDays(15));     //o günkü tarihe 15 gün ekleyerek veritabanındaki teslim tarihine atar
                 kitapkiralamakomut.ExecuteNonQuery();  //SQL komutunu çalıştırıyor
                 kitapkirala.Close();
 

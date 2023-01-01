@@ -80,6 +80,10 @@ namespace kutuphane_uygulamasi
                 //tablodaki veriler datagridview içine yazıldı
                 adap.Fill(tablo);
                 kiralanan_listesi.DataSource = tablo;
+
+                string iadeedilenkitap = kiralanan_listesi.CurrentRow.Cells[2].Value.ToString();
+                string iadeedilenkitapkullanici = kiralanan_listesi.CurrentRow.Cells[1].Value.ToString();
+                label_iade_bilgilendirme.Text = iadeedilenkitapkullanici + " kullanıcısının " + iadeedilenkitap + " kitap kiralama işlemini bitirdiniz.";
             }
             
         }

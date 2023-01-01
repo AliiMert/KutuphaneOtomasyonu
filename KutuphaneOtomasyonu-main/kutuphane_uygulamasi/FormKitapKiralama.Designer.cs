@@ -54,10 +54,9 @@
             // 
             this.btn_Kitap_Listele.BackColor = System.Drawing.Color.LightCoral;
             this.btn_Kitap_Listele.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Kitap_Listele.Location = new System.Drawing.Point(208, 28);
-            this.btn_Kitap_Listele.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Kitap_Listele.Location = new System.Drawing.Point(156, 23);
             this.btn_Kitap_Listele.Name = "btn_Kitap_Listele";
-            this.btn_Kitap_Listele.Size = new System.Drawing.Size(228, 53);
+            this.btn_Kitap_Listele.Size = new System.Drawing.Size(171, 43);
             this.btn_Kitap_Listele.TabIndex = 1;
             this.btn_Kitap_Listele.Text = "Kitapları Listele";
             this.btn_Kitap_Listele.UseVisualStyleBackColor = false;
@@ -67,10 +66,9 @@
             // 
             this.btn_Kitap_Kirala.BackColor = System.Drawing.Color.LightCoral;
             this.btn_Kitap_Kirala.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Kitap_Kirala.Location = new System.Drawing.Point(701, 222);
-            this.btn_Kitap_Kirala.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Kitap_Kirala.Location = new System.Drawing.Point(526, 180);
             this.btn_Kitap_Kirala.Name = "btn_Kitap_Kirala";
-            this.btn_Kitap_Kirala.Size = new System.Drawing.Size(235, 34);
+            this.btn_Kitap_Kirala.Size = new System.Drawing.Size(176, 28);
             this.btn_Kitap_Kirala.TabIndex = 2;
             this.btn_Kitap_Kirala.Text = "KİRALA";
             this.btn_Kitap_Kirala.UseVisualStyleBackColor = false;
@@ -78,40 +76,40 @@
             // 
             // kitaplar_listesi
             // 
+            this.kitaplar_listesi.AllowUserToAddRows = false;
+            this.kitaplar_listesi.AllowUserToDeleteRows = false;
+            this.kitaplar_listesi.AllowUserToOrderColumns = true;
             this.kitaplar_listesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.kitaplar_listesi.Location = new System.Drawing.Point(62, 148);
-            this.kitaplar_listesi.Margin = new System.Windows.Forms.Padding(4);
+            this.kitaplar_listesi.Location = new System.Drawing.Point(46, 120);
             this.kitaplar_listesi.Name = "kitaplar_listesi";
+            this.kitaplar_listesi.ReadOnly = true;
             this.kitaplar_listesi.RowHeadersWidth = 51;
-            this.kitaplar_listesi.Size = new System.Drawing.Size(507, 331);
+            this.kitaplar_listesi.Size = new System.Drawing.Size(380, 269);
             this.kitaplar_listesi.TabIndex = 8;
             // 
             // kiralama_tarihi
             // 
             this.kiralama_tarihi.AutoSize = true;
             this.kiralama_tarihi.BackColor = System.Drawing.Color.White;
-            this.kiralama_tarihi.Location = new System.Drawing.Point(621, 110);
-            this.kiralama_tarihi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.kiralama_tarihi.Location = new System.Drawing.Point(574, 44);
             this.kiralama_tarihi.Name = "kiralama_tarihi";
-            this.kiralama_tarihi.Size = new System.Drawing.Size(14, 16);
+            this.kiralama_tarihi.Size = new System.Drawing.Size(12, 13);
             this.kiralama_tarihi.TabIndex = 4;
             this.kiralama_tarihi.Text = "s";
             // 
             // txt_secilen_kitaplar
             // 
-            this.txt_secilen_kitaplar.Location = new System.Drawing.Point(643, 286);
-            this.txt_secilen_kitaplar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txt_secilen_kitaplar.Location = new System.Drawing.Point(482, 232);
             this.txt_secilen_kitaplar.Name = "txt_secilen_kitaplar";
-            this.txt_secilen_kitaplar.Size = new System.Drawing.Size(332, 149);
+            this.txt_secilen_kitaplar.Size = new System.Drawing.Size(249, 121);
             this.txt_secilen_kitaplar.TabIndex = 5;
             // 
             // txt_giris_metni
             // 
             this.txt_giris_metni.AutoSize = true;
-            this.txt_giris_metni.Location = new System.Drawing.Point(765, 158);
-            this.txt_giris_metni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txt_giris_metni.Location = new System.Drawing.Point(601, 120);
             this.txt_giris_metni.Name = "txt_giris_metni";
-            this.txt_giris_metni.Size = new System.Drawing.Size(0, 16);
+            this.txt_giris_metni.Size = new System.Drawing.Size(0, 13);
             this.txt_giris_metni.TabIndex = 6;
             // 
             // timer1
@@ -121,20 +119,18 @@
             // lbl_hos_geldin
             // 
             this.lbl_hos_geldin.AutoSize = true;
-            this.lbl_hos_geldin.Location = new System.Drawing.Point(687, 158);
-            this.lbl_hos_geldin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_hos_geldin.Location = new System.Drawing.Point(542, 120);
             this.lbl_hos_geldin.Name = "lbl_hos_geldin";
-            this.lbl_hos_geldin.Size = new System.Drawing.Size(74, 16);
+            this.lbl_hos_geldin.Size = new System.Drawing.Size(59, 13);
             this.lbl_hos_geldin.TabIndex = 7;
             this.lbl_hos_geldin.Text = "Hoş Geldin";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(171, 286);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePicker1.Location = new System.Drawing.Point(128, 232);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(265, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 0;
             this.dateTimePicker1.Visible = false;
             // 
@@ -142,10 +138,9 @@
             // 
             this.btn_kitap_bagisla.BackColor = System.Drawing.Color.LightCoral;
             this.btn_kitap_bagisla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_kitap_bagisla.Location = new System.Drawing.Point(701, 453);
-            this.btn_kitap_bagisla.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_kitap_bagisla.Location = new System.Drawing.Point(526, 368);
             this.btn_kitap_bagisla.Name = "btn_kitap_bagisla";
-            this.btn_kitap_bagisla.Size = new System.Drawing.Size(207, 46);
+            this.btn_kitap_bagisla.Size = new System.Drawing.Size(155, 37);
             this.btn_kitap_bagisla.TabIndex = 3;
             this.btn_kitap_bagisla.Text = "Kitap Bağışla";
             this.btn_kitap_bagisla.UseVisualStyleBackColor = false;
@@ -161,10 +156,10 @@
             this.Img_Button_Exit.BackColor = System.Drawing.Color.White;
             this.Img_Button_Exit.Image = ((System.Drawing.Image)(resources.GetObject("Img_Button_Exit.Image")));
             this.Img_Button_Exit.ImageActive = null;
-            this.Img_Button_Exit.Location = new System.Drawing.Point(987, 14);
-            this.Img_Button_Exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Img_Button_Exit.Location = new System.Drawing.Point(740, 11);
+            this.Img_Button_Exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Img_Button_Exit.Name = "Img_Button_Exit";
-            this.Img_Button_Exit.Size = new System.Drawing.Size(65, 57);
+            this.Img_Button_Exit.Size = new System.Drawing.Size(49, 46);
             this.Img_Button_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Img_Button_Exit.TabIndex = 11;
             this.Img_Button_Exit.TabStop = false;
@@ -199,20 +194,20 @@
             this.Txt_Box_Kitap_Ara.LineIdleColor = System.Drawing.Color.LightCoral;
             this.Txt_Box_Kitap_Ara.LineMouseHoverColor = System.Drawing.Color.Black;
             this.Txt_Box_Kitap_Ara.LineThickness = 5;
-            this.Txt_Box_Kitap_Ara.Location = new System.Drawing.Point(127, 97);
-            this.Txt_Box_Kitap_Ara.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Txt_Box_Kitap_Ara.Location = new System.Drawing.Point(95, 79);
+            this.Txt_Box_Kitap_Ara.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Txt_Box_Kitap_Ara.Name = "Txt_Box_Kitap_Ara";
-            this.Txt_Box_Kitap_Ara.Size = new System.Drawing.Size(386, 43);
+            this.Txt_Box_Kitap_Ara.Size = new System.Drawing.Size(290, 35);
             this.Txt_Box_Kitap_Ara.TabIndex = 12;
             this.Txt_Box_Kitap_Ara.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Txt_Box_Kitap_Ara.OnValueChanged += new System.EventHandler(this.Txt_Box_Kitap_Ara_OnValueChanged);
             // 
             // FormKitapKiralama
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Txt_Box_Kitap_Ara);
             this.Controls.Add(this.Img_Button_Exit);
             this.Controls.Add(this.btn_kitap_bagisla);
@@ -226,7 +221,6 @@
             this.Controls.Add(this.btn_Kitap_Listele);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormKitapKiralama";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormKitapKiralama";
